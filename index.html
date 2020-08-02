@@ -2,9 +2,169 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Gracie's Pizza</title>
   </head>
   <body>
+    <section id="welcome">
+      <div class="row background_image align-items-center">
+        <div class="col-lg-12" >
+          <div class="card text-center">
+            <h1>GRACIE'S FRESH PIZZA</h1>
+            <a href="#" class="btn btn-primary" id="orderNow">Order Now</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="chooseSize">
+  <div class="col-lg-12 card text-center" >
+    <h2>Choose Your Pizza Size</h2>
+  <div class="container-wrap">
+    <div class="row no-gutters d-flex">
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Small</h3>
+            <p class="price"><span>Ksh. 500</span></p>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Medium</h3>
+            <p class="price"><span>Ksh. 750</span></p>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Large</h3>
+            <p class="price"><span>Ksh. 1000</span></p>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
+<section id="chooseCrust">
+<div class="col-lg-12 card text-center" >
+  <h2>Choose Your Crust</h2>
+<div class="container-wrap">
+  <div class="row no-gutters d-flex">
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Crispy</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Stuffed</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Gluten Free</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="chooseToppings">
+<div class="col-lg-12 card text-center" >
+  <h2>Choose Your Toppings</h2>
+  <br>
+  <h4>Pick a maximum of 5 topings absolutely free</h4>
+<div class="container-wrap">
+  <div class="row no-gutters d-flex">
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Onions</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Bell Peppers</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 d-flex">
+      <div class="services-wrap d-flex">
+        <div class="text p-4">
+          <h3>Pepperoni</h3>
+          <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-wrap">
+    <div class="row no-gutters d-flex">
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Beef</h3>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Chicken</h3>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex">
+        <div class="services-wrap d-flex">
+          <div class="text p-4">
+            <h3>Bacon</h3>
+            <a href="#" class="ml-2 btn btn-primary">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+<section id="orderSummary">
+<div class="col-lg-12 card text-center" >
+  <div id="show-contact">
+    <h2>Order Summary</h2>
+    <p>Size: <span class="pizzaSize"></span></p>
+    <p>Crust: <span class="pizzaCrust"></span></p>
+    <p>Toppings:</p>
+    <ul id="toppings">
+
+    </ul>
+  </div>
+</div>
+</section>
   </body>
 </html>
