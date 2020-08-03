@@ -15,6 +15,10 @@
   align-items: center;
 }
 
-#buildPizza {
-  align-self: center;
+#showOrder {
+  display: hide;
+}
+
+.total{
+  display: none;
 }
