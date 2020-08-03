@@ -1,28 +1,27 @@
-Project Name
+Project Name:
 Gracie's Pizza
 
-Author Name
+Author Name:
 Grace Wanene
 
-Project Description
+Project Description:
 This is a web app for Gracie's Pizza that allows customers to pick their pizza size, crust and toppings.
 
-Live Demo
+Live Demo:
 https://gracewa.github.io/Gracies_Pizza/
 
-Setup and Installation Requirements clone this repository
+Setup and Installation Requirements: 
 
-open the HTML file using any web browser
+1. clone this repository
 
-Tech Used HTML
+2. open the HTML file using any web browser
 
-CSS
+Tech Used HTML:
 
-JAVASCRIPT
-
-BOOTSTRAP
-
-JQUERY
+1.CSS
+2.JAVASCRIPT
+3.BOOTSTRAP
+4. JQUERY
 
 Contact Info: gracewanene@gmail.com
 
