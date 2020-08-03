@@ -15,10 +15,6 @@
   align-items: center;
 }
 
-#showOrder {
-  display: hide;
-}
-
-.total{
-  display: none;
+#placeOrder h3 {
+  color: white;
 }

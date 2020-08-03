@@ -4,6 +4,21 @@ function Pizza(size, crust, toppings) {
     this.toppings = toppings;
     this.pizzaPrice = 0;
   }
+  $(document).ready(function(){
+    $("form#buildPizza").click(function() {
+      var inputtedSize = $("#size").val();
+      var inputtedCrust = $("#crust").val();
+      var inputtedToppings = $("#toppings").val();
+
+      var newPizza = new Pizza(inputtedSize, inputtedCrust, inputtedToppings);
+
+      $("ul#orderSummary").append("<li><span class='contact'>" + newPizza.Size + "</span></li>");
+
+      $("#size").val("");
+      $("crust").val("");
+      });
+  });
+
   Pizza.prototype.totalCost = function() {
     if (this.size === "500") {
       this.pizzaPrice += parseInt(this.size);
@@ -30,11 +45,8 @@ function Pizza(size, crust, toppings) {
     }
   };
 
-  $(document).ready(function(){
-      $("form").submit(function(){
-          $(".total").show();
-
-          event.preventDefault();
-
+  $(document).ready(function(event){
+    event.preventDefault();
+      alert(Pizza.totalCost);
       });
   });

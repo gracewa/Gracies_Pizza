@@ -15,14 +15,15 @@
         <div class="col-lg-12" >
           <div class="card text-center">
             <h1>GRACIE'S FRESH PIZZA</h1>
-            <a href="#chooseSize" class="btn btn-dark" id="orderNow">Order Now</a>
+            <a href="#size" class="btn btn-dark" id="orderNow">Order Now</a>
           </div>
       </div>
     </div>
-    <section>
-    <div class="col-lg-12 text-center">
+    <section id="placeOrder">
+    <div class="col-lg-12 text-center bg-dark">
+          <br>
           <h3> Build Your Pizza! </h3><br>
-          <form class="form-group" id="custom-pizza">
+          <form class="form-group" id="buildPizza">
             <div class="order">
                   <div class="col-md-12">
                       <div class="card">
@@ -30,7 +31,6 @@
                               <h5 class="card-title">Pizza Size</h5>
                               <p class="card-text">Pick the Size of your Pizza:</p>
                               <select required class="form-control" id="size">
-                                  <option></option>
                                   <option value="500">Regular</option>
                                   <option value="750">Medium</option>
                                   <option value="1000">Super</option>
@@ -65,18 +65,27 @@
                                   <option value="vegeterian">Vegeterian (100)</option>
                               </select>
                           </div>
+                          <div class="col-md-12">
+                              <div class="card">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Pizza Amount</h5>
+                                      <p class="card-text">How Many?:</p>
+                                      <input type="number" id="pizzaNumber"></input>
+                                  </div>
                       </div>
                   </div>
               </div>
+
           </div><br><br>
           <div class="text-center">
           <button type="submit" class="btn btn-dark" id="submit-pizza">Submit Order</button>
         </div>
-        <div class="total">
-        <p><span id="pizzaCost"></span> we have received your message. Thank you for reaching out to us.</p>
-        </div>
+
       </form>
 
+      <ul id="oderSummary">
+
+      </ul>
 
   </section>
   </body>
